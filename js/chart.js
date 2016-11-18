@@ -1,16 +1,35 @@
-function percentage(cId, r, width, color, fontP, fontT, p, text){
+function percentage(cId, r, width, color, bColor, fontP, fontT, xOffsetP, xOffsetT, yOffset, p, text){
 	var canvas = document.getElementById(cId);
-	canvas.width = r;
-	canvas.height = r;
+	var canvasW = r * 2 + width;
+	canvas.width = canvasW;
+	canvas.height = canvasW;
 	var context = canvas.getContext('2d');
-	context.beginPath();
- 	context.arc(r, r, r, 0, Math.PI * 2, true);
- 	context.closePath();
- 	context.stroke();
- 	context.arc(r, r, r - width, 0, Math.PI * 2, true);
- 	context.closePath();
- 	context.stroke();
-	/*context.font = font;
-	context.textBaseline = 'top';
-	context.fillText(text, start_x, start_y);*/
+	var x = r + width/2;
+	var angle = - Math.PI/2;
+	var per = 0;
+	context.textBaseline = 'middle';
+	context.fillStyle = color;
+	var interval = setInterval(function(){
+		context.clearRect(0, 0, canvasW, canvasW);
+		angle += Math.PI * 2/100;
+		per += 1;
+	 	context.lineWidth = width;
+		context.beginPath();
+	 	context.strokeStyle = color;
+	 	context.arc(x, x, r, - Math.PI/2, angle, false);
+	 	context.stroke();
+		context.beginPath();
+	 	context.strokeStyle = bColor;
+	 	context.arc(x, x, r, Math.PI * 3/2, angle, true);
+	 	context.stroke();
+
+		context.font = fontP;
+		context.fillText(per + '%', x - xOffsetP, x - yOffset);
+		context.font = fontT;
+		context.fillText(text, x - xOffsetT, x + yOffset);
+		if(per >= p){
+			clearInterval(interval);
+		}
+	}, 25);
+
 }
