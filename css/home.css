@@ -1,3 +1,67 @@
 .text-des{
 	margin-bottom: 30px;
 }
+canvas{
+	margin-bottom: 20px;
+}
+/* timeline */
+.cd-timeline-content{
+	background: inherit; 
+	box-shadow: none;
+	border: 3px solid #FFF;
+	border-radius: 10px;
+}
+.cd-content-header{
+	font-size: 20px;
+	font-weight: bold;
+}
+.cd-content-company{
+	font-size: 15px;
+}
+.cd-date{
+	font-size: 18px !important;
+}
+.cd-timeline-img svg {
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    margin-left: -20px;
+    margin-top: -20px;
+    max-width: 100%;
+}
+.cd-timeline-img svg path {
+    fill: #FFF;
+}
+@media only screen and (max-width: 1024px) {
+	.cd-timeline-img svg {
+		width: 30px;
+		height: 30px;
+	    margin-left: -15px;
+	    margin-top: -15px;
+	}
+}
+@media only screen and (max-width: 768px) {
+	.cd-timeline-img svg {
+		width: 24px;
+		height: 24px;
+	    margin-left: -12px;
+	    margin-top: -12px;
+	}
+}
+.contact-icon svg{
+	display: block;
+    width: 30px;
+    height: 30px;
+    position: relative;
+}
+.contact-icon svg path{
+	fill: #7f8c97;
+}
+.contact-icon{
+	float: left;
+	margin-right: 10px;
+}
+

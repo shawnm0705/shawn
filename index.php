@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Shawn Ma</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <link href="vendor/timeline/css/style.css" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="css/creative.min.css" rel="stylesheet">
+
+    <link href="css/home.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top">
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">Shawn Ma</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="#about">About Me</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#skills">Skills</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#exps">Work Experiences</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#edu">Education</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <header>
+        <div class="header-content">
+            <div class="header-content-inner">
+                <h1 id="homeHeading">Hi, I'm Shawn</h1>
+                <hr>
+                <p>I'm enthusiastic in Web Developing. <br/>Want to know more about me? Go ahead!</p>
+                <a href="#about" class="btn btn-primary btn-xl page-scroll">About Me</a>
+            </div>
+        </div>
+    </header>
+<?php /*****************        About        *****************/?>
+    <section class="bg-primary" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Who am I?</h2>
+                    <hr class="light">
+                    <p class="text-faded">I am an ambitious person with a Master of Information Technology. My strengths are a high learning ability, a broad range of programming skills and attention to detail.</p>
+                    <a href="#skills" class="page-scroll btn btn-default btn-xl sr-button">Skills</a>
+                </div>
+            </div>
+        </div>
+    </section>
+<?php /*****************        Skills        *****************/?>
+    <section id="skills">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Skills</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <p class="text-des">I am an experienced and passionate Web Developer.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div id="chart_status" class="hidden"></div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <!--<div class="service-box">
+                        <i class="fa fa-4x fa-diamond text-primary sr-icons"></i>
+                    </div>-->
+                    <canvas id="can1"></canvas>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <!--<div class="service-box">
+                        <i class="fa fa-4x fa-paper-plane text-primary sr-icons"></i>
+                        <h3>Ready to Ship</h3>
+                        <p class="text-muted">You can use this theme as is, or you can make changes!</p>
+                    </div>-->
+                    <canvas id="can2"></canvas>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <!--<div class="service-box">
+                        <i class="fa fa-4x fa-newspaper-o text-primary sr-icons"></i>
+                        <h3>Up to Date</h3>
+                        <p class="text-muted">We update dependencies to keep things fresh.</p>
+                    </div>-->
+                    <canvas id="can3"></canvas>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <!--<div class="service-box">
+                        <i class="fa fa-4x fa-heart text-primary sr-icons"></i>
+                        <h3>Made with Love</h3>
+                        <p class="text-muted">You have to make your websites with love these days!</p>
+                    </div>-->
+                    <canvas id="can4"></canvas>
+                </div>
+            </div>
+        </div>
+    </section>
+<?php /*****************        Work Experiences        *****************/?>
+    <section class="bg-primary" id="exps">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Work Experiences</h2>
+                    <hr class="light">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <!-- Timeline -->
+                <section id="cd-timeline" class="cd-container">
+                    <div class="cd-timeline-block">
+                        <div class="cd-timeline-img cd-picture">
+                            <?php echo file_get_contents("vendor/timeline/img/css3.svg"); ?>
+                            <!--<img src="vendor/timeline/img/vendor-android.svg" alt="Picture">-->
+                        </div> <!-- cd-timeline-img -->
+
+                        <div class="cd-timeline-content">
+                            <div class="cd-content-header">Web Designer &amp; Developer</div>
+                            <div class="cd-content-company">Xietiao, China</div>
+                            <!--<img src="img/tl_photoes/001.png" />-->
+                            <span class="cd-date">Jan 2016 – Oct 2016</span>
+                        </div> <!-- cd-timeline-content -->
+                    </div> <!-- cd-timeline-block -->
+
+                    <div class="cd-timeline-block">
+                        <div class="cd-timeline-img cd-picture">
+                            <?php echo file_get_contents("vendor/timeline/img/html5.svg"); ?>
+                        </div> 
+
+                        <div class="cd-timeline-content">
+                            <div class="cd-content-header">Front-end Designer &amp; Developer (internship) </div>
+                            <div class="cd-content-company">Intersective, Sydney</div>
+                            <!--<img src="img/tl_photoes/001.png" />-->
+                            <span class="cd-date">Sep 2015 – Dec 2015</span>
+                        </div> 
+                    </div> 
+
+                    <div class="cd-timeline-block">
+                        <div class="cd-timeline-img cd-picture">
+                            <?php echo file_get_contents("vendor/timeline/img/code.svg"); ?>
+                        </div> 
+
+                        <div class="cd-timeline-content">
+                            <div class="cd-content-header">Web Developer </div>
+                            <div class="cd-content-company">Freelancer</div>
+                            <!--<img src="img/tl_photoes/001.png" />-->
+                            <span class="cd-date">Sep 2014 – Sep 2015</span>
+                        </div> 
+                    </div> 
+
+                </section> <!-- cd-timeline -->
+                <!-- Timeline End -->
+            </div>
+        </div>
+    </section>
+<?php /*****************        Education        *****************/?>
+    <section id="edu">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Education</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <!-- Timeline -->
+                <section id="cd-timeline" class="cd-container">
+                    <div class="cd-timeline-block">
+                        <div class="cd-timeline-img cd-picture">
+                            <?php echo file_get_contents("vendor/timeline/img/wi-fi.svg"); ?>
+                        </div> <!-- cd-timeline-img -->
+
+                        <div class="cd-timeline-content">
+                            <div class="cd-content-header">Professional Year Program</div>
+                            <div class="cd-content-company">Performance Education</div>
+                            <!--<img src="img/tl_photoes/001.png" />-->
+                            <span class="cd-date">Mar 2015 – Jan 2016</span>
+                        </div> <!-- cd-timeline-content -->
+                    </div> <!-- cd-timeline-block -->
+
+                    <div class="cd-timeline-block">
+                        <div class="cd-timeline-img cd-picture">
+                            <?php echo file_get_contents("vendor/timeline/img/vendor-apple.svg"); ?>
+                        </div> 
+
+                        <div class="cd-timeline-content">
+                            <div class="cd-content-header">Master of Information Technology</div>
+                            <div class="cd-content-company">University of New South Wales</div>
+                            <!--<img src="img/tl_photoes/001.png" />-->
+                            <span class="cd-date">Jul 2013 – Dec 2014</span>
+                        </div> 
+                    </div> 
+
+                    <div class="cd-timeline-block">
+                        <div class="cd-timeline-img cd-picture">
+                            <?php echo file_get_contents("vendor/timeline/img/vendor-android.svg"); ?>
+                        </div> 
+
+                        <div class="cd-timeline-content">
+                            <div class="cd-content-header">Master of Engineering Studies</div>
+                            <div class="cd-content-company">University of Wollongong</div>
+                            <!--<img src="img/tl_photoes/001.png" />-->
+                            <span class="cd-date">Jul 2012 – Jun 2013</span>
+                        </div> 
+                    </div> 
+
+                    <div class="cd-timeline-block">
+                        <div class="cd-timeline-img cd-picture">
+                            <?php echo file_get_contents("vendor/timeline/img/vendor-microsoft.svg"); ?>
+                        </div> 
+
+                        <div class="cd-timeline-content">
+                            <div class="cd-content-header">Bachelor of Engineering</div>
+                            <div class="cd-content-company">ZhengZhou University, China</div>
+                            <!--<img src="img/tl_photoes/001.png" />-->
+                            <span class="cd-date">Sep 2007 – Jul 2011</span>
+                        </div> 
+                    </div> 
+
+                </section> <!-- cd-timeline -->
+                <!-- Timeline End -->
+            </div>
+        </div>
+    </section>
+<?php /*****************        Portfolio        *****************/?>
+    <section class="no-padding" id="portfolio">
+        <div class="container-fluid">
+            <div class="row no-gutter popup-gallery">
+                <div class="col-lg-4 col-sm-6">
+                    <a href="img/portfolio/fullsize/xietiao.png" class="portfolio-box">
+                        <img src="img/portfolio/thumbnails/xietiao.png" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    www.zy.xietiao.com
+                                </div>
+                                <div class="project-name">
+                                    Xie Tiao
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="img/portfolio/fullsize/hnb.png" class="portfolio-box">
+                        <img src="img/portfolio/thumbnails/hnb.png" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    www.healthnbaby.com
+                                </div>
+                                <div class="project-name">
+                                    Health &amp; Baby
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="img/portfolio/fullsize/chihub.png" class="portfolio-box">
+                        <img src="img/portfolio/thumbnails/chihub.png" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    www.chihub.xietiao.com
+                                </div>
+                                <div class="project-name">
+                                    Chi-hub Massage Shop
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="img/portfolio/fullsize/bgwrealty.png" class="portfolio-box">
+                        <img src="img/portfolio/thumbnails/bgwrealty.png" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    www.bgwrealty.com.au
+                                </div>
+                                <div class="project-name">
+                                    BGW Realty
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="img/portfolio/fullsize/yq.png" class="portfolio-box">
+                        <img src="img/portfolio/thumbnails/yq.png" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    www.yq.xietiao.com
+                                </div>
+                                <div class="project-name">
+                                    Xie Tiao
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="img/portfolio/fullsize/shawn.png" class="portfolio-box">
+                        <img src="img/portfolio/thumbnails/shawn.png" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Shawn
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+<!--
+    <aside class="bg-dark">
+        <div class="container text-center">
+            <div class="call-to-action">
+                <h2>Free Download at Start Bootstrap!</h2>
+                <a href="http://startbootstrap.com/template-overviews/creative/" class="btn btn-default btn-xl sr-button">Download Now!</a>
+            </div>
+        </div>
+    </aside>
+-->
+<?php /*****************        Contact        *****************/?>
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Let's Get In Touch!</h2>
+                    <hr class="primary">
+                    <p>Need a web developer for your new project? That's great! Give me a call or send me an email and I will get back to you as soon as possible!</p>
+                </div>
+                <div class="col-lg-4 col-lg-offset-2 text-center">
+                    <i class="fa fa-phone fa-3x sr-contact"></i>
+                    <p>0449 633 095</p>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <i class="fa fa-envelope-o fa-3x sr-contact"></i>
+                    <p><a href="mailto:shawnm0705@gmail.com">shawnm0705@gmail.com</a></p>
+                </div>
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Follow Me!</h2>
+                    <hr class="primary">
+                </div>
+                <div class="col-lg-4 col-lg-offset-5 text-center">
+                    <a href="https://au.linkedin.com/in/shawn-ma-b1440ab0" class="contact-icon"><?php echo file_get_contents("img/icon/linkedin.svg"); ?></a>
+                    <a href="https://www.facebook.com/xiao.ma.395891" class="contact-icon"><?php echo file_get_contents("img/icon/facebook.svg"); ?></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/creative.min.js"></script>
+
+    <!-- Home JavaScript -->
+    <script src="vendor/timeline/js/modernizr.js"></script> <!-- Modernizr -->
+    <script src="vendor/timeline/js/main.js"></script>
+    <script src="js/chart.js"></script>
+    <script src="js/home.js"></script>
+
+</body>
+
+</html>
