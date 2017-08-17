@@ -95,7 +95,9 @@
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <h2 class="section-heading">Who am I?</h2>
                     <hr class="light">
-                    <p class="text-faded">I am an ambitious person with a Master of Information Technology. My strengths are a high learning ability, a broad range of programming skills and attention to detail.</p>
+                    <p class="text-faded">I am an ambitious person with a Master of Information Technology. </p>
+                    <p class="text-faded">I am a quick learner and always willing to learn new techniques.</p>
+                    <p class="text-faded">I have a broad range of programming skills and always pay attention to detail.</p>
                     <a href="#skills" class="page-scroll btn btn-default btn-xl sr-button">Skills</a>
                 </div>
             </div>
@@ -367,7 +369,7 @@
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
-                                    Category
+                                    
                                 </div>
                                 <div class="project-name">
                                     Shawn
@@ -411,8 +413,8 @@
                     <hr class="primary">
                 </div>
                 <div class="col-lg-4 col-lg-offset-5 text-center">
-                    <a href="https://au.linkedin.com/in/shawn-ma-b1440ab0" class="contact-icon"><?php echo file_get_contents("img/icon/linkedin.svg"); ?></a>
-                    <a href="https://www.facebook.com/xiao.ma.395891" class="contact-icon"><?php echo file_get_contents("img/icon/facebook.svg"); ?></a>
+                    <a href="https://au.linkedin.com/in/shawn-ma-b1440ab0" class="contact-icon"><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a>
+                    <a href="https://www.facebook.com/xiao.ma.395891" class="contact-icon"><i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i></a>
                 </div>
             </div>
         </div>
