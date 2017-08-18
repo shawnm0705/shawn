@@ -21,7 +21,8 @@ canvas{
 .cd-date{
 	font-size: 18px !important;
 }
-.cd-timeline-img svg {
+.cd-timeline-img i{
+	color: #FFF;
     display: block;
     width: 40px;
     height: 40px;
@@ -31,12 +32,13 @@ canvas{
     margin-left: -20px;
     margin-top: -20px;
     max-width: 100%;
+    text-align: center;
 }
 .cd-timeline-img svg path {
     fill: #FFF;
 }
 @media only screen and (max-width: 1024px) {
-	.cd-timeline-img svg {
+	.cd-timeline-img i{
 		width: 30px;
 		height: 30px;
 	    margin-left: -15px;
@@ -44,14 +46,14 @@ canvas{
 	}
 }
 @media only screen and (max-width: 768px) {
-	.cd-timeline-img svg {
+	.cd-timeline-img i{
 		width: 24px;
 		height: 24px;
 	    margin-left: -12px;
 	    margin-top: -12px;
 	}
 }
-.contact-icon svg{
+.contact-icon i{
 	display: block;
     width: 30px;
     height: 30px;
@@ -60,7 +62,7 @@ canvas{
 .contact-icon svg path{
 	fill: #7f8c97;
 }
-.contact-icon{
+.contact-icon i{
 	color: #7f8c97;
 	float: left;
 	margin-right: 10px;
